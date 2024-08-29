@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trizz - Confirm Your Order</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .transaction-container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .transaction-container h2 {
+            color: #2c3e50;
+            text-align: center;
+        }
+
+        .transaction-container p {
+            color: #34495e;
+            text-align: center;
+        }
+
+        /* .transaction-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        } */
+
+        .transaction-container img {
+            width: 100%; 
+            height: 300px; 
+            object-fit: cover; 
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+
+        .transaction-container .btn {
+            background-color: #27ae60;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            display: block;
+            width: 100%;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .transaction-container .btn:hover {
+            background-color: #2ecc71;
+        }
+
+        .transaction-container .form-group {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top"> -->
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Trizz</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Explore
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#about">About</a></li>
+                            <li><a class="dropdown-item" href="#services">Services</a></li>
+                            <li><a class="dropdown-item" href="#portfolio">Portfolio</a></li>
+                            <li><a class="dropdown-item" href="#testimonials">Testimonials</a></li>
+                            <li><a class="dropdown-item" href="#blog">Blog</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="order.html">Order</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="transaction-container">
+        <h2>Confirm Your Order</h2>
+        <p id="service-name">Loading...</p>
+
+        <img id="order-img" src="" alt="Order Image">
+
+        <form id="order-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <input type="text" class="form-control" id="address" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" class="form-control" id="phone" required>
+            </div>
+            <button type="submit" class="btn btn-success">Confirm Order</button>
+        </form>
+
+        <a href="order.html" class="btn btn-secondary mt-3">Go Back</a>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h5>About Trizz</h5>
+                    <p>Trizz is dedicated to providing expert tree care services with a focus on quality, safety, and
+                        customer satisfaction.</p>
+                </div>
+                <div class="col-lg-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Our Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5>Contact Us</h5>
+                    <p>Email: info@trizz.com</p>
+                    <p>Phone: (123) 456-7890</p>
+                    <p>Address: 123 Trizz Lane, Tree City, TX</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const service = urlParams.get('service');
+            document.getElementById('service-name').textContent = `You are about to order: ${service}`;
+
+            const orderImg = document.getElementById('order-img');
+            switch (service) {
+                case 'Tree Pruning':
+                    orderImg.src = 'assets/pruning.jpg';
+                    break;
+                case 'Tree Removal':
+                    orderImg.src = 'assets/treeremoval.jpeg';
+                    break;
+                case 'Landscaping':
+                    orderImg.src = 'assets/landscaping.webp';
+                    break;
+                case 'Irrigation Systems':
+                    orderImg.src = 'assets/irrigation system.jpeg';
+                    break;
+                case 'Stump Grinding':
+                    orderImg.src = 'assets/Tree-Stump-grinding.jpg';
+                    break;
+                case 'Tree Planting':
+                    orderImg.src = 'assets/planting.jpeg';
+                    break;
+                default:
+                    orderImg.src = 'assets/service_default.jpg';
+            }
+
+            // Handle form submission
+            document.getElementById('order-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                alert('Order placed successfully!');
+                window.location.href = 'index.html';
+            });
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

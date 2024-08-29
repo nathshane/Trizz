@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trizz</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- nav -->
+        <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top"> -->
+        <nav class="navbar navbar-expand-lg navbar-light navbar-custom fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Trizz</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Explore
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#about">About</a></li>
+                                <li><a class="dropdown-item" href="#services">Services</a></li>
+                                <li><a class="dropdown-item" href="#portfolio">Portfolio</a></li>
+                                <li><a class="dropdown-item" href="#testimonials">Testimonials</a></li>
+                                <li><a class="dropdown-item" href="#blog">Blog</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="order.html">Order</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    <!-- hero -->
+    <section class="hero">
+        <video autoplay muted loop playsinline id="heroVideo">
+            <source src="assets/4K Forest - Cinematic Forest - 4K Nature Video Ultra HD.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="overlay"></div>
+        <div class="container text-center text-white">
+            <h1>Welcome to Trizz!</h1>
+            <p>Your partner in tree care with style and sophistication.</p>
+            <p>Treating all Trees with RIZZ</p>
+            <a href="#services" class="btn btn-primary btn-lg">Explore Services</a>
+        </div>
+    </section>
+    
+    <!-- about -->
+    <section id="about" class="about-us">
+        <div class="container">
+            <h2 class="text-center mb-5">About Us</h2>
+            <div class="row">
+                <div class="col-lg-6">
+                    <p>At Trizz, we bring a unique blend of care and creativity to every tree. Our mission is to provide
+                        top-notch tree services that ensure your outdoor spaces thrive beautifully. With years of
+                        experience and a passionate team, we are dedicated to making your environment healthier and more
+                        attractive.</p>
+                </div>
+                <div class="col-lg-6">
+                    <p>Our vision is to be the leading tree care provider, known for our innovative approach and
+                        exceptional customer service. We believe in sustainable practices that contribute to the
+                        well-being of our planet while enhancing the beauty of your surroundings.</p>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-4 team-member">
+                    <img src="assets/p2.jpg" alt="Team Member 2">
+                    <h4>Aditya Wiranata</h4>
+                    <p>Lead Arborist</p>
+                </div>
+                <div class="col-lg-4 team-member">
+                    <img src="assets/p4.jpg" alt="Team Member 1">
+                    <h4>Nathan Shane Gunawan</h4>
+                    <p>CEO, Founder, Web Developer & Designer</p>
+                </div>
+                <div class="col-lg-4 team-member">
+                    <img src="assets/maheka1.jpg" alt="Team Member 3">
+                    <h4>Nyoman Maheka</h4>
+                    <p>Operations Manager</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- services -->
+    <section id="services" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Services</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-box">
+                        <i class="fas fa-tree"></i>
+                        <h4>Tree Pruning</h4>
+                        <p>Professional tree pruning to maintain the health and appearance of your trees.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-box">
+                        <i class="fas fa-leaf"></i>
+                        <h4>Tree Removal</h4>
+                        <p>Safe and efficient tree removal services for any size tree.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-box">
+                        <i class="fas fa-tractor"></i>
+                        <h4>Landscaping</h4>
+                        <p>Comprehensive landscaping services to enhance your outdoor spaces.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-box">
+                        <i class="fas fa-water"></i>
+                        <h4>Irrigation Systems</h4>
+                        <p>Installation and maintenance of irrigation systems for efficient water use.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-box">
+                        <i class="fas fa-shovel"></i>
+                        <h4>Stump Grinding</h4>
+                        <p>Expert stump grinding to remove unwanted stumps and improve your landscape.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-box">
+                        <i class="fas fa-seedling"></i>
+                        <h4>Tree Planting</h4>
+                        <p>Tree planting services to add beauty and value to your property.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- portfolio -->
+    <section id="portfolio" class="portfolio py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Portfolio</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <img src="assets/1.jpg" alt="Portfolio 1">
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <img src="assets/2.jpg" alt="Portfolio 2">
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <img src="assets/3.jpg" alt="Portfolio 3">
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-lg-4 col-md-6 mb-4">    
+                    <img src="assets/4.jpg" alt="Portfolio 4">
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <img src="assets/7.jpg" alt="Portfolio 5">
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <img src="assets/6.jpg" alt="Portfolio 6">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- testimoni -->
+    <section id="testimonials" class="testimonials py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">What Our Clients Say</h2>
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="testimonial-item">
+                            <img src="assets/adi.jpg" alt="Client 1">
+                            <h4>Adi Dharma</h4>
+                            <p>"Thanks to Trizz, our garden has never looked more vibrant! Their creative approach to tree care truly brought our outdoor space to life."</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial-item">
+                            <img src="assets/tguh.jpg" alt="Client 2">
+                            <h4>Arya Teguh</h4>
+                            <p>"The team at Trizz is exceptional! Their dedication to sustainable practices and customer satisfaction sets them apart in the tree care industry."</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial-item">
+                            <img src="assets/deandra.jpg" alt="Client 3">
+                            <h4>Deandra Putra</h4>
+                            <p>"Choosing Trizz was the best decision for our landscape. Their passion and expertise made our environment healthier and more beautiful than ever."</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#testimonialCarousel" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#testimonialCarousel" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- blog -->
+    <section id="blog" class="blog-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Latest Blog Posts</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-post">
+                        <img src="assets/images (1).jpeg" alt="Blog Post 1">
+                        <h4 class="mt-3">"Cultivating Beauty: How Trizz Transforms Your Outdoor Spaces with Creative Tree Care"</h4>
+                        <p class="post-meta">By Admin | Aug 10, 2024</p>
+                        <p>Discover how our passion for trees drives us to create stunning, healthy environments for your home and community.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-post">
+                        <img src="assets/images.jpeg" alt="Blog Post 2">
+                        <h4 class="mt-3">"Sustainable Tree Care: The Trizz Commitment to a Greener Planet"</h4>
+                        <p class="post-meta">By Nath | Aug 9, 2024</p>
+                        <p>Learn about our innovative approach to tree care that not only enhances beauty but also supports the health of our planet.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-post">
+                        <img src="assets/Man-Cut-Branches-On-Trees-640w.webp" alt="Blog Post 3">
+                        <h4 class="mt-3">"Why Trizz is Your Go-To for Exceptional Tree Services and Customer Care"</h4>
+                        <p class="post-meta">By Nath | Aug 8, 2024</p>
+                        <p>Explore our mission to provide top-notch tree services, ensuring your outdoor spaces thrive with health and beauty.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- faq -->
+    <section id="faq" class="faq py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Frequently Asked Questions</h2>
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            What services do you offer?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            We offer a wide range of tree services including pruning, removal, planting, and stump
+                            grinding. We also provide landscaping and irrigation system installation.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            How experienced is your team?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Our team consists of highly skilled arborists with over 20 years of combined experience in
+                            the industry.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Do you offer free consultations?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Yes, we offer free consultations to assess your needs and provide a customized plan.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cta" class="cta">
+        <div class="container">
+            <h2 class="mb-4">Ready to Transform Your Outdoor Space?</h2>
+            <a href="contact.html" class="btn btn-light btn-lg">Get a Free Quote</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h5>About Trizz</h5>
+                    <p>Trizz is dedicated to providing expert tree care services with a focus on quality, safety, and
+                        customer satisfaction.</p>
+                </div>
+                <div class="col-lg-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Our Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5>Contact Us</h5>
+                    <p>Email: info@trizz.com</p>
+                    <p>Phone: (123) 456-7890</p>
+                    <p>Address: 123 Trizz Lane, Tree City, TX</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

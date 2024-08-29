@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trizz - Place an Order</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- nav -->
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom fixed-top">
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top"> -->
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Trizz</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Explore
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#about">About</a></li>
+                            <li><a class="dropdown-item" href="#services">Services</a></li>
+                            <li><a class="dropdown-item" href="#portfolio">Portfolio</a></li>
+                            <li><a class="dropdown-item" href="#testimonials">Testimonials</a></li>
+                            <li><a class="dropdown-item" href="#blog">Blog</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="order.html">Order</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- order section -->
+    <section id="order" class="order py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Place Your Order</h2>
+            <p class="text-center">Select the service you would like to order and provide the necessary details to get started.</p>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="order-option">
+                        <img src="assets/pruning.jpg" alt="Tree Pruning" class="img-fluid rounded">
+                        <h4 class="mt-3">Tree Pruning</h4>
+                        <p>Keep your trees healthy and well-maintained with our professional pruning services.</p>
+                        <a href="transaction.html?service=Tree Pruning" class="btn btn-success">Select</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="order-option">
+                        <img src="assets/treeremoval.jpeg" alt="Tree Removal" class="img-fluid rounded">
+                        <h4 class="mt-3">Tree Removal</h4>
+                        <p>Safe and efficient removal of unwanted trees from your property.</p>
+                        <a href="transaction.html?service=Tree Removal" class="btn btn-success">Select</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="order-option">
+                        <img src="assets/landscaping.webp" alt="Landscaping" class="img-fluid rounded">
+                        <h4 class="mt-3">Landscaping</h4>
+                        <p>Transform your outdoor spaces with our comprehensive landscaping services.</p>
+                        <a href="transaction.html?service=Landscaping" class="btn btn-success">Select</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="order-option">
+                        <img src="assets/irrigation system.jpeg" alt="Irrigation Systems" class="img-fluid rounded">
+                        <h4 class="mt-3">Irrigation Systems</h4>
+                        <p>Ensure your plants receive the water they need with our efficient irrigation systems.</p>
+                        <a href="transaction.html?service=Irrigation Systems" class="btn btn-success">Select</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="order-option">
+                        <img src="assets/Tree-Stump-grinding.jpg" alt="Stump Grinding" class="img-fluid rounded">
+                        <h4 class="mt-3">Stump Grinding</h4>
+                        <p>Remove unwanted stumps and improve the appearance of your landscape.</p>
+                        <a href="transaction.html?service=Stump Grinding" class="btn btn-success">Select</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="order-option">
+                        <img src="assets/planting.jpeg" alt="Tree Planting" class="img-fluid rounded">
+                        <h4 class="mt-3">Tree Planting</h4>
+                        <p>Add beauty and value to your property with our tree planting services.</p>
+                        <a href="transaction.html?service=Tree Planting" class="btn btn-success">Select</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h5>About Trizz</h5>
+                    <p>Trizz is dedicated to providing expert tree care services with a focus on quality, safety, and customer satisfaction.</p>
+                </div>
+                <div class="col-lg-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Our Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5>Contact Us</h5>
+                    <p>Email: info@trizz.com</p>
+                    <p>Phone: (123) 456-7890</p>
+                    <p>Address: 123 Trizz Lane, Tree City, TX</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
